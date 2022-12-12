@@ -4,7 +4,7 @@ public class Author {
 
     public Author(String firstName, String twoName){
         this.firstName = firstName;
-        this.twoName = firstName;
+        this.twoName = twoName;
     }
 
     public String getFirstName(){

@@ -31,4 +31,15 @@ public class Author {
     public int hashCode() {
         return java.util.Objects.hash(firstName);
     }
+    public static String comparisonHashCode(Author one, Author two) {
+        String resoult = " ";
+        if (one.hashCode() == two.hashCode()) {
+            resoult = "Суммы hashCode равны ";
+        } else {
+            resoult = "Суммы hashCode НЕ равны: " + "\n" +
+                    "hashCode " + one + " = " + one.hashCode() + "\n" +
+                    "hashCode " + two + " = " + two.hashCode();
+        }
+        return resoult;
+    }
 }

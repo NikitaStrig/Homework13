@@ -24,5 +24,15 @@ public class Book {
     public String toString(){
         return getNameBook() +  " " + author.toString() +  " " + getPublicationYear();
     }
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book b2 = (Book) other;
+        return nameBook.equals(b2.nameBook);
+    }
+    public int hashCode() {
+        return java.util.Objects.hash(nameBook);
+    }
 }
 

@@ -14,6 +14,7 @@ public class Main {
                 + World.getPublicationYear());
         System.out.println(Abba);
         System.out.println(Murka);
+        System.out.println();
 
     }
 }

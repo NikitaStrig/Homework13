@@ -7,11 +7,13 @@ public class Main {
        Book Zed = new Book("Zed", Pelevin,2001);
        Book Murka = new Book("Murka",Abba,2010);
 
-        System.out.println("Zed.publicationYear = " + Zed.publicationYear);
+        System.out.println("Zed.publicationYear = " + Zed.getPublicationYear());
         Zed.setPublicationYear(2015);
-        System.out.println("Zed.publicationYear = " + Zed.publicationYear);
-        System.out.println(World.nameBook+" " + World.author.twoName+" " + World.author.firstName+" "
-                + World.publicationYear);
+        System.out.println("Zed.publicationYear = " + Zed.getPublicationYear());
+        System.out.println(World.getNameBook()+" " + World.author.getTwoName()+" " + World.author.getFirstName()+" "
+                + World.getPublicationYear());
+        System.out.println(Abba);
+        System.out.println(Murka);
 
     }
 }

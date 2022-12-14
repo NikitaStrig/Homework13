@@ -1,18 +1,23 @@
 public class Author {
-   String firstName; // имя
-   String twoName; // фамилия
+    String firstName; // имя
+    String twoName; // фамилия
 
-    public Author(String firstName, String twoName){
+    public Author(String firstName, String twoName) {
         this.firstName = firstName;
         this.twoName = twoName;
     }
 
-    public String getFirstName(){
+    public String getFirstName() {
         return firstName;
 
     }
-    public String getTwoName(){
+
+    public String getTwoName() {
         return twoName;
     }
 
+    public String toString() {
+        return getFirstName() + " " + getTwoName();
+
+    }
 }
